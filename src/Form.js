@@ -60,7 +60,7 @@ export default function Form() {
 }
 useEffect(() => {
  if(isConfirmForm(form)){
-   return console.log('submit!')
+   return alert(`提交完成！ ${JSON.stringify(form)}`)
  }
  return console.log('no empty!')
 }, [form])
